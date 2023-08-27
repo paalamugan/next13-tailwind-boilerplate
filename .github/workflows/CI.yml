@@ -22,9 +22,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: "npm"
-      - run: npm ci
-      - run: npm run build
+          cache: "yarn"
+      - run: yarn install --frozen-lockfile
+      - run: yarn build
 
   test:
     strategy:
@@ -50,18 +50,18 @@ jobs:
         run: npx commitlint --from ${{ github.event.pull_request.base.sha }} --to ${{ github.event.pull_request.head.sha }} --verbose
 
       - name: Linter
-        run: npm run lint
+        run: yarn lint
 
       - name: Type checking
-        run: npm run check-types
+        run: yarn check-types
 
       - name: Run unit tests
-        run: npm run test
+        run: yarn test
 
       - name: Run storybook tests
-        run: npm run test-storybook:ci
+        run: yarn test-storybook:ci
 
       - name: Run e2e tests
-        run: npx percy exec -- npm run e2e:headless
+        run: npx percy exec -- yarn e2e:headless
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
