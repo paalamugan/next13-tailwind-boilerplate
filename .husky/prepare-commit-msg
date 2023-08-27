@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-if [ $CZ -eq 1 ]
+if [ "$CZ" = "1" ]
 then
   true
 else
