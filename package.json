@@ -27,7 +27,7 @@
     "prepare": "husky install",
     "postbuild": "next-sitemap",
     "release": "standard-version",
-    "cm": "git-cz"
+    "commit": "cross-env CZ=1 git-cz"
   },
   "dependencies": {
     "@clerk/nextjs": "^4.23.2",

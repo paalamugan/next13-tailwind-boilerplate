@@ -26,8 +26,8 @@
       "title": "Performance"
     },
     "chore": {
-      "emoji": "🧹",
-      "code": ":broom:",
+      "emoji": "🩹",
+      "code": ":adhesive_bandage:",
       "description": "Other changes that don't modify src or test files",
       "title": "Chores"
     },

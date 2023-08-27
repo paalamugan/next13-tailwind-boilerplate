@@ -1,6 +1,5 @@
 # Boilerplate and Starter for Next JS 13+, Tailwind CSS 3.3 and TypeScript
 
-
 🚀 Boilerplate and Starter for Next.js with App Router and Page Router support, Tailwind CSS and TypeScript ⚡️ Made with developer experience first: Next.js, TypeScript, ESLint, Prettier, Husky, Lint-Staged, Jest, Testing Library, Commitlint, VSCode, Netlify, PostCSS, Tailwind CSS, Authentication with [Clerk](https://clerk.com?utm_source=github&utm_medium=sponsorship&utm_campaign=nextjs-boilerplate), Database with DrizzleORM (SQLite, PostgreSQL, and MySQL) and [Turso](https://turso.tech/?utm_source=nextjsstarterbp)
 
 ### Features
@@ -164,7 +163,7 @@ You have access to the whole code source if you need further customization. The 
 The project enforces [Conventional Commits](https://www.conventionalcommits.org/) specification. This means that all your commit messages must be formatted according to the specification. To help you write commit messages, the project uses [Commitizen](https://github.com/commitizen/cz-cli), an interactive CLI that guides you through the commit process. To use it, run the following command:
 
 ```shell
-yarn cm
+yarn commit
 ```
 
 One of the benefits of using Conventional Commits is that it allows us to automatically generate a `CHANGELOG` file. It also allows us to automatically determine the next version number based on the types of commits that are included in a release.
@@ -210,7 +209,7 @@ If you are VSCode users, you can have a better integration with VSCode by instal
 
 With the plugins installed on your VSCode, ESLint and Prettier can automatically fix the code and show you the errors. Same goes for testing, you can install VSCode Jest extension to automatically run your tests and it also show the code coverage in context.
 
-Pro tips: if you need a project wide type checking with TypeScript, you can run a build with <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd> on Mac.
+Pro tips: if you need a project wide type checking with TypeScript, you can run a build with `<kbd>`Cmd`</kbd>` + `<kbd>`Shift`</kbd>` + `<kbd>`B`</kbd>` on Mac.
 
 ### Contributions
 
