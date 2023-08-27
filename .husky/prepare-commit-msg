@@ -3,7 +3,7 @@
 
 if [ "$CZ" = "1" ]
 then
-  echo "Running commitizen..."
+  echo "Running commitizen.."
 else
   exec < /dev/tty && yarn cz --hook || true
 fi
