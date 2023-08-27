@@ -3,7 +3,8 @@
 module.exports = {
   extends: ['gitmoji'],
   rules: {
-    'type-case': [2, 'always', ['lower-case', 'kebab-case']],
+    'type-empty': [2, 'never'],
+    'subject-empty': [2, 'never'],
     'type-enum': [
       2,
       'always',
