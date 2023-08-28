@@ -7,9 +7,16 @@ on:
       - completed
     branches:
       - main
+  workflow_dispatch:
+    
 
 jobs:
   release:
+    permissions:
+      contents: write
+      packages: write
+      pull-requests: write
+      issues: write
     strategy:
       matrix:
         node-version: [16.x]
