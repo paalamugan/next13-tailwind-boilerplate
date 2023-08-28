@@ -1,7 +1,6 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-echo "Husky: prepare-commit-msg hook started... $2"
 if [ "$CZ" = "1" ] || [ "$2" = "message" ]; then true
 else
   exec < /dev/tty && yarn cz --hook || true
