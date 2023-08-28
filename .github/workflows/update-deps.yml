@@ -3,10 +3,13 @@ name: Update dependencies
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 1 * *"
+    - cron: "0 0 1 * *" # Run on the first day of every month
 
 jobs:
   update:
+    permissions:
+      contents: write
+      pull-requests: write
     strategy:
       matrix:
         node-version: [18.x]
@@ -27,7 +30,7 @@ jobs:
       - run: rm -Rf node_modules yarn.lock
       - run: yarn install
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v5
         with:
-          commit-message: "⬆️upgrade: update dependencies to the latest version"
+          commit-message: "⬆️ upgrade: update dependencies to the latest version"
           title: Update dependencies to the latest version
