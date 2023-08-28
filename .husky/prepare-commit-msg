@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
+echo "Husky: Running prepare-commit-msg hook ($0)"
 if [ "$CZ" = "1" ]
 then
   true
