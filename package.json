@@ -115,24 +115,6 @@
     "tailwindcss": "^3.3.3",
     "typescript": "5.2.2"
   },
-  "release": {
-    "branches": [
-      "main"
-    ],
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      "@semantic-release/changelog",
-      [
-        "@semantic-release/npm",
-        {
-          "npmPublish": false
-        }
-      ],
-      "@semantic-release/git",
-      "@semantic-release/github"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/paalamugan/next13-tailwind-boilerplate.git"
@@ -140,7 +122,7 @@
   "author": "Paalamugan (https://github.com/paalamugan)",
   "packageManager": "yarn@1.22.19",
   "engines": {
-    "node": ">=16.18.0",
+    "node": ">=18.0.0",
     "yarn": ">=1.22.0",
     "npm": "please-use-yarn"
   },
