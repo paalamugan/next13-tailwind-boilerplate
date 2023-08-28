@@ -209,10 +209,10 @@ If you are VSCode users, you can have a better integration with VSCode by instal
 
 With the plugins installed on your VSCode, ESLint and Prettier can automatically fix the code and show you the errors. Same goes for testing, you can install VSCode Jest extension to automatically run your tests and it also show the code coverage in context.
 
-Pro tips: if you need a project wide type checking with TypeScript, you can run a build with `<kbd>`Cmd`</kbd>` + `<kbd>`Shift`</kbd>` + `<kbd>`B`</kbd>` on Mac.
+Pro tips: if you need a project wide type checking with TypeScript, you can run a build with `<kbd>`Cmd `</kbd>` + `<kbd>`Shift `</kbd>` + `<kbd>`B `</kbd>` on Mac.
 
 ### License
 
-Licensed under the MIT License, Copyright © 2023
+Licensed under the MIT License, Copyright © 2023.
 
 See [LICENSE](LICENSE) for more information.
